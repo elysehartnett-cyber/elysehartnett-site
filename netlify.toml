@@ -1,0 +1,21 @@
+# Elyse Hartnett Fine Art — Netlify config
+# Static site (no build step) + one serverless function for Stripe Checkout.
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+  # No build command: the site is plain HTML/CSS/JS. Netlify bundles the
+  # function automatically. The function has no npm dependencies (it calls
+  # Stripe's REST API with fetch), so nothing needs installing.
+
+# Friendly path: the frontend POSTs to /api/create-checkout
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# Don't serve the function's source code as a static file
+[[redirects]]
+  from = "/netlify/*"
+  to = "/shop.html"
+  status = 404
