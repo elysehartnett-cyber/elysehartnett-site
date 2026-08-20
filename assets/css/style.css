@@ -482,10 +482,19 @@ p  { max-width: 62ch; }
 .pmodal__stage { position: relative; display: flex; align-items: center; justify-content: center; min-height: 0; }
 .pmodal__img { display: none; width: 100%; object-fit: contain; max-height: 62vh; margin: auto; cursor: pointer; }
 .pmodal__img.is-active { display: block; }
-.pmodal__nav { position: absolute; top: 50%; transform: translateY(-50%); width: 2.6rem; height: 2.6rem; border-radius: 999px; background: rgba(255,255,255,.92); border: 1px solid var(--line); color: var(--ink); font-size: 1.6rem; line-height: 1; display: grid; place-items: center; box-shadow: 0 4px 14px rgba(0,0,0,.18); z-index: 2; }
-.pmodal__nav:hover { background: #fff; color: var(--gold-deep); }
-.pmodal__nav--prev { left: .3rem; }
-.pmodal__nav--next { right: .3rem; }
+.pmodal__nav { position: absolute; top: 50%; transform: translateY(-50%); width: 2.2rem; height: 2.2rem; border-radius: 999px; background: rgba(255,255,255,.6); border: 1px solid rgba(0,0,0,.05); color: var(--ink); font-size: 1.3rem; line-height: 1; display: grid; place-items: center; box-shadow: 0 2px 8px rgba(0,0,0,.1); z-index: 2; transition: opacity .25s var(--ease), background .2s var(--ease); }
+.pmodal__nav:hover { background: rgba(255,255,255,.95); }
+.pmodal__nav--prev { left: .4rem; }
+.pmodal__nav--next { right: .4rem; }
+/* desktop (can hover): arrows stay hidden until you hover the image */
+@media (hover: hover) {
+  .pmodal__nav { opacity: 0; }
+  .pmodal__stage:hover .pmodal__nav, .pmodal__nav:focus-visible { opacity: 1; }
+}
+/* touch devices (mobile): no hover, so keep arrows gently visible */
+@media (hover: none) {
+  .pmodal__nav { opacity: .5; width: 2rem; height: 2rem; font-size: 1.15rem; }
+}
 .pmodal__counter { position: absolute; bottom: .4rem; left: 50%; transform: translateX(-50%); background: rgba(27,35,30,.78); color: var(--cream-text); font-size: .72rem; letter-spacing: .1em; padding: .25rem .75rem; border-radius: 999px; z-index: 2; }
 .pmodal__thumbs { display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; }
 .pmodal__thumb { width: 52px; height: 52px; border: 1px solid var(--line); background: #fff; padding: 2px; opacity: .5; transition: opacity .2s var(--ease); }
