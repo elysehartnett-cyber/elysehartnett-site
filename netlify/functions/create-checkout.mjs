@@ -97,7 +97,12 @@ export default async (req) => {
             : undefined,
       },
     };
-    if (catalog.tax?.enabled) priceData.tax_behavior = "exclusive";
+    if (catalog.tax?.enabled) {
+      priceData.tax_behavior = "exclusive";
+      // General - Tangible Goods (physical prints & cards). Stripe Tax uses this
+      // to determine taxability by jurisdiction from the shipping address.
+      priceData.product_data.tax_code = "txcd_99999999";
+    }
 
     lineItems.push({ price_data: priceData, quantity: qty });
   }

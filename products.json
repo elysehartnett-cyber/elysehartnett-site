@@ -9,7 +9,7 @@
   },
   "tax": {
     "enabled": false,
-    "_note": "PHASE 8: set enabled=true once Elyse's CDTFA seller's permit is active. The checkout function reads this flag to turn on Stripe Tax (collects for US-CA only; no nexus elsewhere)."
+    "_note": "PHASE 8: set enabled=true once Elyse's CDTFA seller's permit is registered in Stripe (Stripe Tax on, California added, origin address set). The checkout function then turns on automatic_tax and applies Stripe tax codes. California only — Stripe collects only where registered."
   },
   "products": [
     {
@@ -21,11 +21,11 @@
       "shortName": "Anna's Hummingbird",
       "priceCents": 3500,
       "stock": 7,
-      "images": ["assets/img/shop/hummingbird-1.jpg", "assets/img/shop/hummingbird-2.jpg", "assets/img/shop/hummingbird-3.jpg"],
+      "images": ["assets/img/web/annas-hummingbird.jpg", "assets/img/shop/hummingbird-1.jpg", "assets/img/shop/hummingbird-3.jpg"],
       "short": "An adult male Anna's Hummingbird at rest on salvia — the hummingbird that stays through a California winter.",
-      "description": "Anna's Hummingbirds don't leave. While other hummingbirds follow the bloom south, these stay through a California winter — small, fierce, and permanent. This adult male is painted at rest rather than in flight, which is how you almost never see them: perched on a salvia stem, gorget lit magenta, close enough to count the scaled green feathers across his back.\n\nIt's a quiet piece that keeps giving something back. Hang it where you pass it daily and you'll find yourself stopping at the color.",
+      "description": "Anna's Hummingbirds don't leave. While other hummingbirds follow the bloom south, these stay through a California winter — small, fierce, and permanent. This adult male is painted at rest rather than in flight, which is how you almost never see them: perched on a salvia stem, gorget lit magenta, close enough to count the scaled green feathers across his back.\n\nBest hung close, where the feather detail reads.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original watercolor",
+        "Giclée print of an original watercolor",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
         "Signed and titled in pencil",
         "Fits any standard 11×14 frame — frame not included",
@@ -41,11 +41,11 @@
       "shortName": "Burrowing Owl",
       "priceCents": 3500,
       "stock": 7,
-      "images": ["assets/img/shop/owl-1.jpg", "assets/img/shop/owl-2.jpg", "assets/img/shop/owl-3.jpg"],
+      "images": ["assets/img/web/burrowing-owl.jpg", "assets/img/shop/owl-1.jpg", "assets/img/shop/owl-3.jpg"],
       "short": "A Burrowing Owl mid head-tilt beside desert dandelion — a ground-dwelling owl in decline across California.",
-      "description": "Burrowing Owls live underground. They nest in old ground squirrel burrows in open grassland, stand about nine inches tall, and hunt at dawn and dusk on long bare legs. This one is caught mid head-tilt — the gesture everyone who has met one remembers — beside a stand of desert dandelion.\n\nThey are disappearing across California as the open ground they depend on gets developed. Painting one felt like the least I could do, and the most: a chance to make someone look closely at a bird they may never have known was living down the road.\n\nThis is the piece that makes people smile before they know why. It belongs somewhere you'll catch it on your way past — an entryway, a desk, a kitchen wall.",
+      "description": "Burrowing Owls live underground. They nest in old ground squirrel burrows in open grassland, stand about nine inches tall, and hunt at dawn and dusk on long bare legs. This one is caught mid head-tilt — the gesture everyone who has met one remembers — beside a stand of desert dandelion.\n\nThey are disappearing across California as the open ground they depend on gets developed. Painting one felt like the least I could do, and the most: a chance to make someone look closely at a bird they may never have known was living down the road.\n\nWarm browns and yellow against a pale ground. It reads well in an entryway or above a desk.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original watercolor",
+        "Giclée print of an original watercolor",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
         "Signed and titled in pencil",
         "Fits any standard 11×14 frame — frame not included",
@@ -61,13 +61,14 @@
       "shortName": "Emergence",
       "priceCents": 3500,
       "stock": 7,
-      "images": ["assets/img/shop/emergence-1.jpg", "assets/img/shop/emergence-2.jpg", "assets/img/shop/emergence-3.jpg"],
+      "images": ["assets/img/shop/emergence-2.jpg", "assets/img/shop/emergence-1.jpg", "assets/img/shop/emergence-3.jpg"],
+      "_todo": "images[0] is a stand-in crop until Elyse supplies a clean full-bleed scan of the Emergence painting; swap it in as the lead image then.",
       "short": "A monarch on showy milkweed — the one plant its caterpillars can eat, painted as a single system.",
-      "description": "Monarch caterpillars can eat exactly one thing: milkweed. No milkweed, no monarchs — the two are locked together, and the collapse of one is the collapse of the other. This painting puts them in the same frame where they belong: a monarch resting against the broad leaves of showy milkweed under a deep blue wash.\n\nTitled Emergence, for what milkweed makes possible.\n\nThe warmest piece in the collection — deep blue against that orange. It brings life into a room that needs some.",
+      "description": "Monarch caterpillars can eat exactly one thing: milkweed. No milkweed, no monarchs — the two are locked together, and the collapse of one is the collapse of the other. This painting puts them in the same frame where they belong: a monarch resting against the broad leaves of showy milkweed under a deep blue wash.\n\nTitled Emergence, for what milkweed makes possible.\n\nDeep blue against orange — it carries color into a room.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original watercolor",
+        "Giclée print of an original watercolor",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
-        "Signed and titled in pencil on the print",
+        "Signed and titled in pencil",
         "Fits any standard 11×14 frame — frame not included",
         "Printed locally in San Diego"
       ]
@@ -81,13 +82,13 @@
       "shortName": "Frieda's African Violets",
       "priceCents": 3500,
       "stock": 7,
-      "images": ["assets/img/shop/violets-1.jpg", "assets/img/shop/violets-2.jpg", "assets/img/shop/violets-3.jpg"],
+      "images": ["assets/img/web/violet.jpg", "assets/img/shop/violets-1.jpg", "assets/img/shop/violets-3.jpg"],
       "short": "An oil painting of African violets, named for my great-grandmother Frieda — a midwife, an entrepreneur, and a grower of flowers.",
-      "description": "I named this painting after a woman I never met. Frieda was my great-grandmother, and I grew up on stories of her — a midwife, an entrepreneur, a grower of flowers. She went after the life she wanted and built it against the odds.\n\nMy mother always kept African violets. Now I do too. And when I came back to painting after a long time away, this is the flower I came back to — the one that started it all.\n\nPainted in oil against a dark ground, the light catches what most people never notice about them: the leaves are furred, silver at every edge, and the petals hold a dozen shades between white and deep purple. The original was accepted into the San Diego County Fair fine art exhibit and stays with my family. This print is how it travels.\n\nSoft, dark, and intimate — it settles a space rather than brightening it. Good in a bedroom, a reading corner, anywhere you want quiet.",
+      "description": "I named this painting after a woman I never met. Frieda was my great-grandmother, and I grew up on stories of her — a midwife, an entrepreneur, a grower of flowers. She went after the life she wanted and built it against the odds. She grew African violets on her windowsills.\n\nMy mother always kept African violets. Now I do too. And when I came back to painting after a long time away, this is the flower I came back to — the one that started it all.\n\nPainted in oil against a dark ground, the light catches what most people never notice about them: the leaves are furred, silver at every edge, and the petals hold a dozen shades between white and deep purple. The original was accepted into the San Diego County Fair fine art exhibit and stays with my family. This print is how it travels.\n\nDark ground, soft light. It settles a space rather than brightening it.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original oil painting",
+        "Giclée print of an original oil painting",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
-        "Signed and titled in pencil on the print",
+        "Signed and titled in pencil",
         "Fits any standard 11×14 frame — frame not included",
         "Printed locally in San Diego"
       ]
@@ -101,12 +102,12 @@
       "shortName": "Western Tanager",
       "priceCents": 3500,
       "stock": 3,
-      "images": ["assets/img/shop/PLACEHOLDER-tanager-1.jpg", "assets/img/shop/PLACEHOLDER-tanager-2.jpg"],
-      "_todo": "NOT LIVE. Awaiting matted-print photos shot to match the other four. To activate: set active=true and replace the two PLACEHOLDER image paths.",
+      "images": ["assets/img/web/western-tanager.jpg"],
+      "_todo": "NOT LIVE. Awaiting matted-print photos shot to match the other four. To activate: set active=true and add the matted photos to images.",
       "short": "A Western Tanager among manzanita — flame-orange and yellow, here only on migration.",
-      "description": "The first time you see a Western Tanager, you assume something has escaped. A flame-orange head, a body of hard yellow, black wings — it looks like it belongs somewhere tropical, and then it's gone. They pass through California on migration, which means seeing one is a matter of being outside at the right week of the right month.\n\nPainted perched among manzanita, with its berries hanging heavy on the branch.\n\nPure color. This is the one to put somewhere dim — a hallway, a stairwell, a north-facing wall that needs waking up.",
+      "description": "The first time you see a Western Tanager, you assume something has escaped. A flame-orange head, a body of hard yellow, black wings — it looks like it belongs somewhere tropical, and then it's gone. They pass through California on migration, which means seeing one is a matter of being outside at the right week of the right month.\n\nPainted perched among manzanita, with its berries hanging heavy on the branch.\n\nStrong color against a pale ground. It holds up on a dim wall.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original watercolor",
+        "Giclée print of an original watercolor",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
         "Signed and titled in pencil",
         "Fits any standard 11×14 frame — frame not included",
@@ -122,12 +123,12 @@
       "shortName": "California Gnatcatcher",
       "priceCents": 3500,
       "stock": 4,
-      "images": ["assets/img/shop/PLACEHOLDER-gnatcatcher-1.jpg", "assets/img/shop/PLACEHOLDER-gnatcatcher-2.jpg"],
-      "_todo": "NOT LIVE. Awaiting matted-print photos shot to match the other four. To activate: set active=true and replace the two PLACEHOLDER image paths.",
+      "images": ["assets/img/web/california-gnatcatcher.jpg"],
+      "_todo": "NOT LIVE. Awaiting matted-print photos shot to match the other four. To activate: set active=true and add the matted photos to images.",
       "short": "A federally threatened California Gnatcatcher on California buckwheat — the small gray bird most people walk past.",
-      "description": "A small gray bird that most people walk past. The coastal California Gnatcatcher is federally threatened, and its whole existence depends on the low coastal scrub that gets cleared first and defended last. Protect that habitat and you keep the gnatcatcher. It's that direct.\n\nPainted at close range on California buckwheat, so you can see what's actually there: soft gray, a black cap, a long dark tail held at an angle, and the pale clustered blooms it moves through.\n\nThe most restrained piece in the collection — muted grays, dusty greens, soft pink. It reads calm, and it holds a wall without demanding anything.",
+      "description": "A small gray bird that most people walk past. The coastal California Gnatcatcher is federally threatened, and its whole existence depends on the low coastal scrub that gets cleared first and defended last. Protect that habitat and you keep the gnatcatcher. It's that direct.\n\nPainted at close range on California buckwheat, so you can see what's actually there: soft gray, a black cap, a long dark tail held at an angle, and the pale clustered blooms it moves through.\n\nMuted grays, dusty greens, soft pink. Quiet on a wall.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original watercolor",
+        "Giclée print of an original watercolor",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
         "Signed and titled in pencil",
         "Fits any standard 11×14 frame — frame not included",
@@ -145,11 +146,11 @@
       "stock": 10,
       "images": ["assets/img/shop/framed-hummingbird-1.jpg", "assets/img/shop/framed-hummingbird-2.jpg"],
       "short": "An adult male Anna's Hummingbird on salvia, framed and ready to display.",
-      "description": "An adult male Anna's Hummingbird at rest on salvia, magenta gorget catching the light. These are the hummingbirds that stay through a California winter instead of following the bloom south.\n\nSmall, quiet, and alive — the kind of piece you put close, where someone will lean in. Stands on a shelf, desk, or windowsill, or hangs on a wall.",
+      "description": "An adult male Anna's Hummingbird at rest on salvia, magenta gorget catching the light. These are the hummingbirds that stay through a California winter instead of following the bloom south.\n\nSmall enough for a desk, a shelf, or a windowsill. Stands on a surface or hangs on a wall.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original watercolor, 4×6",
-        "Matted and set in a natural wood frame with plexiglass",
-        "Titled in pencil on the back of the print",
+        "Giclée print of an original watercolor, 4×6",
+        "Matted in a natural wood frame",
+        "Signed and titled in pencil",
         "Stands on a surface or hangs on a wall — ready to display, no framing needed"
       ]
     },
@@ -164,11 +165,11 @@
       "stock": 10,
       "images": ["assets/img/shop/framed-owl-1.jpg", "assets/img/shop/framed-owl-2.jpg"],
       "short": "A Burrowing Owl beside desert dandelion, framed and ready to display.",
-      "description": "A Burrowing Owl mid head-tilt, standing in open ground beside desert dandelion. These owls nest underground in old squirrel burrows and are disappearing as California's open grassland goes.\n\nIt makes people smile before they know why — good for a desk, an entryway, or anywhere you want a little unexpected warmth. Stands on a surface or hangs on a wall.",
+      "description": "A Burrowing Owl mid head-tilt, standing in open ground beside desert dandelion. These owls nest underground in old squirrel burrows and are disappearing as California's open grassland goes.\n\nSmall enough for a desk, a shelf, or a windowsill. Stands on a surface or hangs on a wall.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original watercolor, 4×6",
-        "Matted and set in a natural wood frame with plexiglass",
-        "Titled in pencil on the back of the print",
+        "Giclée print of an original watercolor, 4×6",
+        "Matted in a natural wood frame",
+        "Signed and titled in pencil",
         "Stands on a surface or hangs on a wall — ready to display, no framing needed"
       ]
     },
@@ -183,11 +184,11 @@
       "stock": 10,
       "images": ["assets/img/shop/framed-emergence-1.jpg", "assets/img/shop/framed-emergence-2.jpg"],
       "short": "A monarch on showy milkweed, framed and ready to display.",
-      "description": "A monarch resting on showy milkweed — the only plant its caterpillars can eat. Titled Emergence, for what that one plant makes possible.\n\nDeep blue and warm orange in a small footprint. It brings color into a corner without taking one over. Stands on a surface or hangs on a wall.",
+      "description": "A monarch resting on showy milkweed — the only plant its caterpillars can eat. Titled Emergence, for what that one plant makes possible.\n\nDeep blue and warm orange in a small footprint. Stands on a surface or hangs on a wall.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original watercolor, 4×6",
-        "Matted and set in a natural wood frame with plexiglass",
-        "Titled in pencil on the back of the print",
+        "Giclée print of an original watercolor, 4×6",
+        "Matted in a natural wood frame",
+        "Signed and titled in pencil",
         "Stands on a surface or hangs on a wall — ready to display, no framing needed"
       ]
     },
@@ -202,11 +203,11 @@
       "stock": 10,
       "images": ["assets/img/shop/framed-violets-1.jpg", "assets/img/shop/framed-violets-2.jpg"],
       "short": "Frieda's African Violets in oil, framed and ready to display.",
-      "description": "An oil painting of African violets, named for my great-grandmother Frieda — a midwife, an entrepreneur, and a grower of flowers. My mother always kept African violets. Now I do too.\n\nVelvet leaves silver at every edge, petals holding a dozen shades between white and deep purple, all of it lit against a dark ground. It reads soft and quiet — it belongs on a nightstand, a bookshelf, or a bedroom wall. Stands on a surface or hangs on a wall.",
+      "description": "An oil painting of African violets, named for my great-grandmother Frieda — a midwife, an entrepreneur, and a grower of flowers. She grew African violets on her windowsills. My mother kept them too. Now I do.\n\nFurred leaves silver at every edge, petals holding a dozen shades between white and deep purple, all of it lit against a dark ground. Stands on a surface or hangs on a wall.",
       "specs": [
-        "Giclée print on enhanced matte paper, from an original oil painting, 4×6",
-        "Matted and set in a natural wood frame with plexiglass",
-        "Titled in pencil on the back of the print",
+        "Giclée print of an original oil painting, 4×6",
+        "Matted in a natural wood frame",
+        "Signed and titled in pencil",
         "Stands on a surface or hangs on a wall — ready to display, no framing needed"
       ]
     },
@@ -215,12 +216,12 @@
       "active": true,
       "category": "cards",
       "categoryLabel": "Greeting cards",
-      "name": "Bird Card Set — Four Pack",
-      "shortName": "Bird card 4-pack",
+      "name": "San Diego Bird Card Collection — Four Pack",
+      "shortName": "San Diego bird cards",
       "priceCents": 2000,
       "stock": 25,
       "images": ["assets/img/shop/cards-birdset-1.jpg", "assets/img/shop/cards-birdset-2.jpg", "assets/img/shop/card-hummingbird.jpg", "assets/img/shop/card-owl.jpg", "assets/img/shop/card-tanager.jpg", "assets/img/shop/card-gnatcatcher.jpg"],
-      "short": "Four birds painted with the plants they live alongside. Blank inside, envelopes included.",
+      "short": "Four San Diego birds painted with the plants they live alongside. Blank inside, envelopes included.",
       "description": "Four birds, four cards: Anna's Hummingbird, Burrowing Owl, Western Tanager, and the federally threatened California Gnatcatcher. Each one painted with the plant it actually lives alongside, because a bird without its habitat is only half the story.\n\nBlank inside — for a thank-you, a birthday, or a note to someone who'd rather get a bird than a form letter.",
       "specs": [
         "Set of 4 folded 5×7 cards, one of each design",
@@ -236,13 +237,13 @@
       "category": "cards",
       "categoryLabel": "Greeting cards",
       "name": "Full Collection Card Set — Six Pack",
-      "shortName": "Card collection of six",
+      "shortName": "Full collection cards",
       "priceCents": 3000,
       "stock": 25,
-      "images": ["assets/img/shop/PLACEHOLDER-cards-six-1.jpg", "assets/img/shop/PLACEHOLDER-cards-six-2.jpg"],
-      "_todo": "NOT LIVE. Awaiting the six-card photo. To activate: set active=true and replace the PLACEHOLDER image paths.",
+      "images": ["assets/img/shop/cards-birdset-1.jpg"],
+      "_todo": "NOT LIVE. Awaiting the six-card photo. To activate: set active=true and replace images with the six-card photos.",
       "short": "All six paintings — four birds, a monarch, and Frieda's African Violets. Blank inside, envelopes included.",
-      "description": "The complete collection: Anna's Hummingbird, Burrowing Owl, Western Tanager, California Gnatcatcher, the monarch on showy milkweed, and Frieda's African Violets. Six cards, six paintings — every one of them a living thing painted with the plants and blooms it belongs to.\n\nBlank inside — for whatever you need to say, to whoever needs to hear it. A full set to keep on hand, or to give whole.",
+      "description": "The complete collection: Anna's Hummingbird, Burrowing Owl, Western Tanager, California Gnatcatcher, the monarch on showy milkweed, and Frieda's African Violets. Six cards, six paintings — every one a living thing painted with the plants and blooms it belongs to.\n\nBlank inside — for whatever you need to say, to whoever needs to hear it. A full set to keep on hand, or to give whole.",
       "specs": [
         "Set of 6 folded 5×7 cards, one of each design",
         "Blank inside",

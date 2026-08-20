@@ -13,7 +13,7 @@
     { key: "matted", label: "Matted 8×10 prints",
       sub: "8×10 giclée prints, matted to 11×14, signed. Ready for any standard frame." },
     { key: "framed", label: "Framed 4×6 prints",
-      sub: "Small giclée prints in a natural wood frame with plexiglass — ready to display." },
+      sub: "Small giclée prints, matted in a natural wood frame. Ready to display." },
     { key: "cards", label: "Greeting cards",
       sub: "Folded 5×7 cards, blank inside, with envelopes." }
   ];
