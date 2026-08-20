@@ -1,0 +1,9 @@
+# Large original artwork files — not used by the live site, kept local only
+assets/img/source/
+
+# Node / Netlify build artifacts
+node_modules/
+.netlify/
+
+# macOS cruft
+.DS_Store
