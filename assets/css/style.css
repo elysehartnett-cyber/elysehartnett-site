@@ -479,11 +479,18 @@ p  { max-width: 62ch; }
 .pmodal__close { position: absolute; top: .8rem; right: 1rem; z-index: 2; background: rgba(255,255,255,.85); border: 1px solid var(--line); width: 2.2rem; height: 2.2rem; border-radius: 999px; font-size: 1.4rem; line-height: 1; color: var(--ink); }
 #pmodalBody { display: grid; grid-template-columns: 1fr 1fr; max-height: 92vh; }
 .pmodal__media { background: #fbf7ee; padding: clamp(1rem,2vw,1.6rem); display: flex; flex-direction: column; gap: .8rem; overflow-y: auto; }
-.pmodal__img { display: none; width: 100%; object-fit: contain; max-height: 62vh; margin: auto; }
+.pmodal__stage { position: relative; display: flex; align-items: center; justify-content: center; min-height: 0; }
+.pmodal__img { display: none; width: 100%; object-fit: contain; max-height: 62vh; margin: auto; cursor: pointer; }
 .pmodal__img.is-active { display: block; }
-.pmodal__thumbs { display: flex; gap: .6rem; justify-content: center; }
-.pmodal__thumb { width: 58px; height: 58px; border: 1px solid var(--line); background: #fff; padding: 3px; opacity: .6; }
-.pmodal__thumb.is-active { opacity: 1; border-color: var(--gold); }
+.pmodal__nav { position: absolute; top: 50%; transform: translateY(-50%); width: 2.6rem; height: 2.6rem; border-radius: 999px; background: rgba(255,255,255,.92); border: 1px solid var(--line); color: var(--ink); font-size: 1.6rem; line-height: 1; display: grid; place-items: center; box-shadow: 0 4px 14px rgba(0,0,0,.18); z-index: 2; }
+.pmodal__nav:hover { background: #fff; color: var(--gold-deep); }
+.pmodal__nav--prev { left: .3rem; }
+.pmodal__nav--next { right: .3rem; }
+.pmodal__counter { position: absolute; bottom: .4rem; left: 50%; transform: translateX(-50%); background: rgba(27,35,30,.78); color: var(--cream-text); font-size: .72rem; letter-spacing: .1em; padding: .25rem .75rem; border-radius: 999px; z-index: 2; }
+.pmodal__thumbs { display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; }
+.pmodal__thumb { width: 52px; height: 52px; border: 1px solid var(--line); background: #fff; padding: 2px; opacity: .5; transition: opacity .2s var(--ease); }
+.pmodal__thumb:hover { opacity: .85; }
+.pmodal__thumb.is-active { opacity: 1; border: 2px solid var(--gold); }
 .pmodal__thumb img { width: 100%; height: 100%; object-fit: cover; }
 .pmodal__info { padding: clamp(1.4rem,3vw,2.4rem); overflow-y: auto; }
 .pmodal__info h2 { font-size: clamp(1.6rem,3vw,2.2rem); margin: .3rem 0 .4rem; }

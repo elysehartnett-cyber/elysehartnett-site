@@ -110,11 +110,16 @@
   function openProduct(id) {
     var p = byId[id]; if (!p) return;
     var m = el("pmodal"); if (!m) return;
+    var n = p.images.length;
     var imgs = p.images.map(function (src, i) {
-      return '<img src="' + esc(src) + '" alt="' + esc(p.shortName) + (i ? " (detail)" : "") + '" class="pmodal__img' + (i === 0 ? " is-active" : "") + '" />';
+      return '<img src="' + esc(src) + '" alt="' + esc(p.shortName) + (i ? " — view " + (i + 1) : "") + '" class="pmodal__img' + (i === 0 ? " is-active" : "") + '" data-advance />';
     }).join("");
-    var thumbs = p.images.length > 1 ? '<div class="pmodal__thumbs">' + p.images.map(function (src, i) {
-      return '<button type="button" class="pmodal__thumb' + (i === 0 ? " is-active" : "") + '" data-thumb="' + i + '"><img src="' + esc(src) + '" alt="" /></button>';
+    var nav = n > 1 ?
+      '<button class="pmodal__nav pmodal__nav--prev" type="button" data-nav="-1" aria-label="Previous image">&#8249;</button>' +
+      '<button class="pmodal__nav pmodal__nav--next" type="button" data-nav="1" aria-label="Next image">&#8250;</button>' +
+      '<span class="pmodal__counter"><span class="pmodal__cur">1</span> / ' + n + '</span>' : "";
+    var thumbs = n > 1 ? '<div class="pmodal__thumbs">' + p.images.map(function (src, i) {
+      return '<button type="button" class="pmodal__thumb' + (i === 0 ? " is-active" : "") + '" data-thumb="' + i + '" aria-label="View image ' + (i + 1) + '"><img src="' + esc(src) + '" alt="" /></button>';
     }).join("") + '</div>' : "";
     var desc = String(p.description).split("\n\n").map(function (para) {
       return "<p>" + esc(para) + "</p>";
@@ -122,7 +127,7 @@
     var specs = (p.specs || []).map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("");
 
     el("pmodalBody").innerHTML =
-      '<div class="pmodal__media">' + imgs + thumbs + '</div>' +
+      '<div class="pmodal__media"><div class="pmodal__stage">' + imgs + nav + '</div>' + thumbs + '</div>' +
       '<div class="pmodal__info">' +
         '<p class="eyebrow">' + esc(p.categoryLabel) + '</p>' +
         '<h2 id="pmodalTitle">' + esc(p.shortName) + '</h2>' +
@@ -147,6 +152,20 @@
       '<span class="qty__n">' + qty + '</span>' +
       '<button type="button" class="qty__btn" data-step="1" aria-label="Increase quantity">+</button>' +
     '</div>';
+  }
+  function currentImageIndex() {
+    var imgs = document.querySelectorAll(".pmodal__img");
+    for (var k = 0; k < imgs.length; k++) if (imgs[k].classList.contains("is-active")) return k;
+    return 0;
+  }
+  function setActiveImage(i) {
+    var imgs = document.querySelectorAll(".pmodal__img");
+    var ths = document.querySelectorAll(".pmodal__thumb");
+    var nimg = imgs.length; if (!nimg) return;
+    i = ((i % nimg) + nimg) % nimg;
+    imgs.forEach(function (im, k) { im.classList.toggle("is-active", k === i); });
+    ths.forEach(function (b, k) { b.classList.toggle("is-active", k === i); });
+    var cur = document.querySelector(".pmodal__cur"); if (cur) cur.textContent = i + 1;
   }
 
   /* ---------- cart drawer ---------- */
@@ -255,7 +274,7 @@
 
   /* ---------- events (delegated) ---------- */
   document.addEventListener("click", function (e) {
-    var t = e.target.closest("[data-add],[data-view],[data-add-modal],[data-remove],[data-step],[data-thumb],[data-cart-open],[data-cart-close],[data-close],#checkoutBtn");
+    var t = e.target.closest("[data-add],[data-view],[data-add-modal],[data-remove],[data-step],[data-thumb],[data-nav],[data-advance],[data-cart-open],[data-cart-close],[data-close],#checkoutBtn");
     if (!t) return;
 
     if (t.hasAttribute("data-add")) { addToCart(t.getAttribute("data-add"), 1); openCart(); }
@@ -277,13 +296,9 @@
       if (t.closest("#cartItems")) { setQty(pid, next); }
       else { span.textContent = Math.max(1, Math.min(next, maxQty(byId[pid]))); }
     }
-    else if (t.hasAttribute("data-thumb")) {
-      var i = parseInt(t.getAttribute("data-thumb"), 10);
-      var imgs = document.querySelectorAll(".pmodal__img");
-      var ths = document.querySelectorAll(".pmodal__thumb");
-      imgs.forEach(function (im, k) { im.classList.toggle("is-active", k === i); });
-      ths.forEach(function (b, k) { b.classList.toggle("is-active", k === i); });
-    }
+    else if (t.hasAttribute("data-thumb")) { setActiveImage(parseInt(t.getAttribute("data-thumb"), 10)); }
+    else if (t.hasAttribute("data-nav")) { setActiveImage(currentImageIndex() + parseInt(t.getAttribute("data-nav"), 10)); }
+    else if (t.hasAttribute("data-advance")) { setActiveImage(currentImageIndex() + 1); }
     else if (t.hasAttribute("data-cart-open")) { openCart(); }
     else if (t.hasAttribute("data-cart-close")) { closeCart(); }
     else if (t.hasAttribute("data-close")) { closeProduct(); }
@@ -291,6 +306,9 @@
   });
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") { closeProduct(); closeCart(); }
+    else if ((e.key === "ArrowRight" || e.key === "ArrowLeft") && el("pmodal") && !el("pmodal").hidden) {
+      setActiveImage(currentImageIndex() + (e.key === "ArrowRight" ? 1 : -1));
+    }
   });
 
   /* ---------- init ---------- */
