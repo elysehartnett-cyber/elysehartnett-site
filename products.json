@@ -8,7 +8,7 @@
     "freeLabel": "Free shipping"
   },
   "tax": {
-    "enabled": false,
+    "enabled": true,
     "_note": "PHASE 8: set enabled=true once Elyse's CDTFA seller's permit is registered in Stripe (Stripe Tax on, California added, origin address set). The checkout function then turns on automatic_tax and applies Stripe tax codes. California only — Stripe collects only where registered."
   },
   "products": [
