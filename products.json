@@ -9,7 +9,7 @@
   },
   "tax": {
     "enabled": true,
-    "_note": "PHASE 8: set enabled=true once Elyse's CDTFA seller's permit is registered in Stripe (Stripe Tax on, California added, origin address set). The checkout function then turns on automatic_tax and applies Stripe tax codes. California only — Stripe collects only where registered."
+    "_note": "Stripe Tax on with California registration; automatic_tax + tangible-goods tax code applied at checkout. California only — Stripe collects only where registered."
   },
   "products": [
     {
@@ -22,8 +22,8 @@
       "priceCents": 3500,
       "stock": 7,
       "images": ["assets/img/web/annas-hummingbird.jpg", "assets/img/shop/hummingbird-1.jpg", "assets/img/shop/hummingbird-3.jpg"],
-      "short": "An adult male Anna's Hummingbird at rest on salvia — the hummingbird that stays through a California winter.",
-      "description": "Anna's Hummingbirds don't leave. While other hummingbirds follow the bloom south, these stay through a California winter — small, fierce, and permanent. This adult male is painted at rest rather than in flight, which is how you almost never see them: perched on a salvia stem, gorget lit magenta, close enough to count the scaled green feathers across his back.\n\nBest hung close, where the feather detail reads.",
+      "short": "An adult male Anna's Hummingbird on salvia. That magenta throat isn't pigment — it's feather structure bending light.",
+      "description": "An adult male Anna's Hummingbird on salvia. That magenta throat isn't pigment — it's structure. Microscopic layers in the feather bend light, so the color flares or disappears depending on where you're standing.\n\nThis one is painted at rest rather than in flight, which is how you almost never see them — perched on a salvia stem, gorget lit magenta, close enough to count the scaled green feathers across his back.",
       "specs": [
         "Giclée print of an original watercolor",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
@@ -42,8 +42,8 @@
       "priceCents": 3500,
       "stock": 7,
       "images": ["assets/img/web/burrowing-owl.jpg", "assets/img/shop/owl-1.jpg", "assets/img/shop/owl-3.jpg"],
-      "short": "A Burrowing Owl mid head-tilt beside desert dandelion — a ground-dwelling owl in decline across California.",
-      "description": "Burrowing Owls live underground. They nest in old ground squirrel burrows in open grassland, stand about nine inches tall, and hunt at dawn and dusk on long bare legs. This one is caught mid head-tilt — the gesture everyone who has met one remembers — beside a stand of desert dandelion.\n\nThey are disappearing across California as the open ground they depend on gets developed. Painting one felt like the least I could do, and the most: a chance to make someone look closely at a bird they may never have known was living down the road.\n\nWarm browns and yellow against a pale ground. It reads well in an entryway or above a desk.",
+      "short": "A Burrowing Owl mid head-tilt beside desert dandelion. One of the few owls you'll see in daylight, and it nests underground in burrows dug by ground squirrels.",
+      "description": "Burrowing Owls live underground. They nest in old ground squirrel burrows out in open grassland, stand about nine inches tall, and hunt at dawn and dusk on long bare legs.\n\nThis one is caught mid head-tilt — the gesture everyone who's met one remembers — beside a stand of desert dandelion.\n\nIn the 1860s, a naturalist wrote that burrowing owls stood on every little knoll around San Diego. They're gone from 19 California counties now, as the open ground they need gets developed. Where they hold on, it's usually because someone noticed. They nest on vacant lots and roadsides — if you spot one, report it to your local Audubon chapter.",
       "specs": [
         "Giclée print of an original watercolor",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
@@ -63,7 +63,7 @@
       "stock": 7,
       "images": ["assets/img/web/emergence.jpg", "assets/img/shop/emergence-1.jpg", "assets/img/shop/emergence-3.jpg"],
       "short": "A monarch on showy milkweed — the one plant its caterpillars can eat, painted as a single system.",
-      "description": "Monarch caterpillars can eat exactly one thing: milkweed. No milkweed, no monarchs — the two are locked together, and the collapse of one is the collapse of the other. This painting puts them in the same frame where they belong: a monarch resting against the broad leaves of showy milkweed under a deep blue wash.\n\nTitled Emergence, for what milkweed makes possible.\n\nDeep blue against orange — it carries color into a room.",
+      "description": "Monarch caterpillars can eat exactly one thing: milkweed. Every monarch you've ever seen exists because a milkweed plant was standing there — a nursery, a food source, the place a caterpillar becomes something else entirely.\n\nThis painting puts them in the same frame, where they belong. A monarch resting against the broad leaves of showy milkweed under a deep blue wash. Titled Emergence for what the milkweed makes possible.\n\nIf you have the space, plant milkweed.",
       "specs": [
         "Giclée print of an original watercolor",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
@@ -82,8 +82,8 @@
       "priceCents": 3500,
       "stock": 7,
       "images": ["assets/img/web/violet.jpg", "assets/img/shop/violets-1.jpg", "assets/img/shop/violets-3.jpg"],
-      "short": "An oil painting of African violets, named for my great-grandmother Frieda — a midwife, an entrepreneur, and a grower of flowers.",
-      "description": "I named this painting after a woman I never met. Frieda was my great-grandmother, and I grew up on stories of her — a midwife, an entrepreneur, a grower of flowers. She went after the life she wanted and built it against the odds. She grew African violets on her windowsills.\n\nMy mother always kept African violets. Now I do too. And when I came back to painting after a long time away, this is the flower I came back to — the one that started it all.\n\nPainted in oil against a dark ground, the light catches what most people never notice about them: the leaves are furred, silver at every edge, and the petals hold a dozen shades between white and deep purple. The original was accepted into the San Diego County Fair fine art exhibit and stays with my family. This print is how it travels.\n\nDark ground, soft light. It settles a space rather than brightening it.",
+      "short": "An oil painting named for my great-grandmother Frieda — a midwife, an entrepreneur, and a grower of African violets.",
+      "description": "Frieda was my great-grandmother. I grew up on stories of her — a midwife, an entrepreneur, and a grower of African violets. She went after the life she wanted and built it against the odds.\n\nMy mother always kept African violets. Now I do too. And when I came back to painting after a long time away, this is the flower I came back to. The one that started it all.\n\nPainted in oil against a dark ground, the light catches what most people never notice about them. The leaves are furred, and you can see the fuzz standing out along every edge. The petals hold a dozen shades between white and deep purple.\n\nThe original was accepted into the San Diego County Fair fine art exhibit and stays with my family. This print is how it travels.",
       "specs": [
         "Giclée print of an original oil painting",
         "8×10 image, matted to 11×14 with a white bevel-cut mat",
@@ -144,12 +144,13 @@
       "priceCents": 3000,
       "stock": 10,
       "images": ["assets/img/shop/framed-hummingbird-1.jpg", "assets/img/shop/framed-hummingbird-2.jpg"],
-      "short": "An adult male Anna's Hummingbird on salvia, framed and ready to display.",
-      "description": "An adult male Anna's Hummingbird at rest on salvia, magenta gorget catching the light. These are the hummingbirds that stay through a California winter instead of following the bloom south.\n\nSmall enough for a desk, a shelf, or a windowsill. Stands on a surface or hangs on a wall.",
+      "short": "",
+      "description": "An adult male Anna's Hummingbird on salvia. That magenta throat isn't pigment — it's structure. Microscopic layers in the feather bend light, so the color flares or disappears depending on where you're standing.\n\nThis one is painted at rest rather than in flight, which is how you almost never see them — perched on a salvia stem, gorget lit magenta, close enough to count the scaled green feathers across his back.",
       "specs": [
         "Giclée print of an original watercolor, 4×6",
         "Matted in a natural wood frame",
         "Signed and titled in pencil",
+        "Small enough for a desk, a shelf, or a windowsill",
         "Stands on a surface or hangs on a wall — ready to display, no framing needed"
       ]
     },
@@ -163,12 +164,13 @@
       "priceCents": 3000,
       "stock": 10,
       "images": ["assets/img/shop/framed-owl-1.jpg", "assets/img/shop/framed-owl-2.jpg"],
-      "short": "A Burrowing Owl beside desert dandelion, framed and ready to display.",
-      "description": "A Burrowing Owl mid head-tilt, standing in open ground beside desert dandelion. These owls nest underground in old squirrel burrows and are disappearing as California's open grassland goes.\n\nSmall enough for a desk, a shelf, or a windowsill. Stands on a surface or hangs on a wall.",
+      "short": "",
+      "description": "Burrowing Owls live underground. They nest in old ground squirrel burrows out in open grassland, stand about nine inches tall, and hunt at dawn and dusk on long bare legs.\n\nThis one is caught mid head-tilt — the gesture everyone who's met one remembers — beside a stand of desert dandelion.\n\nIn the 1860s, a naturalist wrote that burrowing owls stood on every little knoll around San Diego. They're gone from 19 California counties now, as the open ground they need gets developed. Where they hold on, it's usually because someone noticed. They nest on vacant lots and roadsides — if you spot one, report it to your local Audubon chapter.",
       "specs": [
         "Giclée print of an original watercolor, 4×6",
         "Matted in a natural wood frame",
         "Signed and titled in pencil",
+        "Small enough for a desk, a shelf, or a windowsill",
         "Stands on a surface or hangs on a wall — ready to display, no framing needed"
       ]
     },
@@ -182,12 +184,13 @@
       "priceCents": 3000,
       "stock": 10,
       "images": ["assets/img/shop/framed-emergence-1.jpg", "assets/img/shop/framed-emergence-2.jpg"],
-      "short": "A monarch on showy milkweed, framed and ready to display.",
-      "description": "A monarch resting on showy milkweed — the only plant its caterpillars can eat. Titled Emergence, for what that one plant makes possible.\n\nDeep blue and warm orange in a small footprint. Stands on a surface or hangs on a wall.",
+      "short": "",
+      "description": "Monarch caterpillars can eat exactly one thing: milkweed. Every monarch you've ever seen exists because a milkweed plant was standing there — a nursery, a food source, the place a caterpillar becomes something else entirely.\n\nThis painting puts them in the same frame, where they belong. A monarch resting against the broad leaves of showy milkweed under a deep blue wash. Titled Emergence for what the milkweed makes possible.\n\nIf you have the space, plant milkweed.",
       "specs": [
         "Giclée print of an original watercolor, 4×6",
         "Matted in a natural wood frame",
         "Signed and titled in pencil",
+        "Small enough for a desk, a shelf, or a windowsill",
         "Stands on a surface or hangs on a wall — ready to display, no framing needed"
       ]
     },
@@ -201,12 +204,13 @@
       "priceCents": 3000,
       "stock": 10,
       "images": ["assets/img/shop/framed-violets-1.jpg", "assets/img/shop/framed-violets-2.jpg"],
-      "short": "Frieda's African Violets in oil, framed and ready to display.",
-      "description": "An oil painting of African violets, named for my great-grandmother Frieda — a midwife, an entrepreneur, and a grower of flowers. She grew African violets on her windowsills. My mother kept them too. Now I do.\n\nFurred leaves silver at every edge, petals holding a dozen shades between white and deep purple, all of it lit against a dark ground. Stands on a surface or hangs on a wall.",
+      "short": "",
+      "description": "Frieda was my great-grandmother. I grew up on stories of her — a midwife, an entrepreneur, and a grower of African violets. She went after the life she wanted and built it against the odds.\n\nMy mother always kept African violets. Now I do too. And when I came back to painting after a long time away, this is the flower I came back to. The one that started it all.\n\nPainted in oil against a dark ground, the light catches what most people never notice about them. The leaves are furred, and you can see the fuzz standing out along every edge. The petals hold a dozen shades between white and deep purple.\n\nThe original was accepted into the San Diego County Fair fine art exhibit and stays with my family. This print is how it travels.",
       "specs": [
         "Giclée print of an original oil painting, 4×6",
         "Matted in a natural wood frame",
         "Signed and titled in pencil",
+        "Small enough for a desk, a shelf, or a windowsill",
         "Stands on a surface or hangs on a wall — ready to display, no framing needed"
       ]
     },
@@ -216,12 +220,12 @@
       "category": "cards",
       "categoryLabel": "Greeting cards",
       "name": "San Diego Bird Card Collection — Four Pack",
-      "shortName": "San Diego bird cards",
+      "shortName": "San Diego Bird Cards",
       "priceCents": 2000,
       "stock": 25,
       "images": ["assets/img/shop/cards-birdset-2.jpg", "assets/img/shop/card-hummingbird.jpg", "assets/img/shop/card-owl.jpg", "assets/img/shop/card-tanager.jpg", "assets/img/shop/card-gnatcatcher.jpg"],
       "short": "Four San Diego birds painted with the plants they live alongside. Blank inside, envelopes included.",
-      "description": "Four birds, four cards: Anna's Hummingbird, Burrowing Owl, Western Tanager, and the federally threatened California Gnatcatcher. Each one painted with the plant it actually lives alongside, because a bird without its habitat is only half the story.\n\nBlank inside — for a thank-you, a birthday, or a note to someone who'd rather get a bird than a form letter.",
+      "description": "Four birds, four cards: Anna's Hummingbird, Burrowing Owl, Western Tanager, and the federally threatened California Gnatcatcher. Each one painted with a plant it actually lives alongside, because a bird without habitat is only half the story.\n\nBlank inside — for a thank you, a birthday, or anyone who would love to get a bird in the mail.",
       "specs": [
         "Set of 4 folded 5×7 cards, one of each design",
         "Blank inside",

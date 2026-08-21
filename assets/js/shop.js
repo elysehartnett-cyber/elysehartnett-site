@@ -97,7 +97,7 @@
         '</button>' +
         '<h3 class="print__name">' + esc(p.shortName) + '</h3>' +
         '<p class="print__meta">' + esc(p.categoryLabel) + '</p>' +
-        '<p class="print__short">' + esc(p.short) + '</p>' +
+        (p.short ? '<p class="print__short">' + esc(p.short) + '</p>' : '') +
         '<div class="print__row">' +
           '<span class="print__price">' + money(p.priceCents) + '</span>' +
           '<button class="btn btn--buy" type="button" data-add="' + esc(p.id) + '">Add to cart</button>' +
