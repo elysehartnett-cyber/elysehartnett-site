@@ -219,7 +219,7 @@
       "shortName": "San Diego bird cards",
       "priceCents": 2000,
       "stock": 25,
-      "images": ["assets/img/shop/cards-birdset-1.jpg", "assets/img/shop/cards-birdset-2.jpg", "assets/img/shop/card-hummingbird.jpg", "assets/img/shop/card-owl.jpg", "assets/img/shop/card-tanager.jpg", "assets/img/shop/card-gnatcatcher.jpg"],
+      "images": ["assets/img/shop/cards-birdset-2.jpg", "assets/img/shop/card-hummingbird.jpg", "assets/img/shop/card-owl.jpg", "assets/img/shop/card-tanager.jpg", "assets/img/shop/card-gnatcatcher.jpg"],
       "short": "Four San Diego birds painted with the plants they live alongside. Blank inside, envelopes included.",
       "description": "Four birds, four cards: Anna's Hummingbird, Burrowing Owl, Western Tanager, and the federally threatened California Gnatcatcher. Each one painted with the plant it actually lives alongside, because a bird without its habitat is only half the story.\n\nBlank inside — for a thank-you, a birthday, or a note to someone who'd rather get a bird than a form letter.",
       "specs": [
