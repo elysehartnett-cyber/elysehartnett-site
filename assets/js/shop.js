@@ -129,11 +129,13 @@
     el("pmodalBody").innerHTML =
       '<div class="pmodal__media"><div class="pmodal__stage">' + imgs + nav + '</div>' + thumbs + '</div>' +
       '<div class="pmodal__info">' +
-        '<p class="eyebrow">' + esc(p.categoryLabel) + '</p>' +
-        '<h2 id="pmodalTitle">' + esc(p.shortName) + '</h2>' +
-        '<p class="pmodal__price">' + money(p.priceCents) + '</p>' +
-        '<div class="pmodal__desc">' + desc + '</div>' +
-        (specs ? '<ul class="pmodal__specs">' + specs + '</ul>' : "") +
+        '<div class="pmodal__scroll">' +
+          '<p class="eyebrow">' + esc(p.categoryLabel) + '</p>' +
+          '<h2 id="pmodalTitle">' + esc(p.shortName) + '</h2>' +
+          '<p class="pmodal__price">' + money(p.priceCents) + '</p>' +
+          '<div class="pmodal__desc">' + desc + '</div>' +
+          (specs ? '<ul class="pmodal__specs">' + specs + '</ul>' : "") +
+        '</div>' +
         '<div class="pmodal__buy">' +
           qtyStepperHtml(id, 1) +
           '<button class="btn" type="button" data-add-modal="' + esc(id) + '">Add to cart</button>' +

@@ -485,10 +485,10 @@ p  { max-width: 62ch; }
 /* product modal */
 .pmodal { position: fixed; inset: 0; z-index: 120; display: flex; align-items: center; justify-content: center; padding: 4vh 4vw; }
 .pmodal__overlay { position: absolute; inset: 0; background: rgba(15,19,16,.6); }
-.pmodal__panel { position: relative; background: var(--paper); max-width: 62rem; width: 100%; max-height: 92vh; border-radius: 2px; box-shadow: 0 30px 70px -20px rgba(0,0,0,.6); }
+.pmodal__panel { position: relative; background: var(--paper); max-width: 62rem; width: 100%; max-height: 92vh; border-radius: 2px; overflow: hidden; box-shadow: 0 30px 70px -20px rgba(0,0,0,.6); }
 .pmodal__close { position: absolute; top: .8rem; right: 1rem; z-index: 2; background: rgba(255,255,255,.85); border: 1px solid var(--line); width: 2.2rem; height: 2.2rem; border-radius: 999px; font-size: 1.4rem; line-height: 1; color: var(--ink); }
 #pmodalBody { display: grid; grid-template-columns: 1fr 1fr; max-height: 92vh; }
-.pmodal__media { background: #fbf7ee; padding: clamp(1rem,2vw,1.6rem); display: flex; flex-direction: column; gap: .8rem; overflow-y: auto; }
+.pmodal__media { background: #fbf7ee; padding: clamp(1rem,2vw,1.6rem); display: flex; flex-direction: column; gap: .8rem; overflow-y: auto; min-height: 0; max-height: 92vh; }
 .pmodal__stage { position: relative; display: flex; align-items: center; justify-content: center; min-height: 0; }
 .pmodal__img { display: none; width: 100%; object-fit: contain; max-height: 62vh; margin: auto; cursor: pointer; }
 .pmodal__img.is-active { display: block; }
@@ -511,14 +511,15 @@ p  { max-width: 62ch; }
 .pmodal__thumb:hover { opacity: .85; }
 .pmodal__thumb.is-active { opacity: 1; border: 2px solid var(--gold); }
 .pmodal__thumb img { width: 100%; height: 100%; object-fit: cover; }
-.pmodal__info { padding: clamp(1.4rem,3vw,2.4rem); overflow-y: auto; }
+.pmodal__info { padding: 0; overflow: hidden; min-height: 0; max-height: 92vh; display: flex; flex-direction: column; }
+.pmodal__scroll { flex: 1 1 auto; min-height: 0; overflow-y: auto; padding: clamp(1.4rem,3vw,2.4rem); }
 .pmodal__info h2 { font-size: clamp(1.6rem,3vw,2.2rem); margin: .3rem 0 .4rem; }
 .pmodal__price { font-size: 1.25rem; font-weight: 600; margin-bottom: 1.2rem; }
 .pmodal__desc p { font-size: 1rem; color: var(--ink); margin-bottom: .9rem; max-width: none; }
 .pmodal__specs { list-style: none; margin: 1.2rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--line); }
 .pmodal__specs li { font-size: .9rem; color: var(--muted); padding-left: 1.1rem; position: relative; margin-bottom: .4rem; }
 .pmodal__specs li::before { content: "—"; position: absolute; left: 0; color: var(--gold); }
-.pmodal__buy { display: flex; align-items: center; gap: 1rem; margin-top: 1.4rem; flex-wrap: wrap; }
+.pmodal__buy { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; flex-shrink: 0; padding: 1rem clamp(1.4rem,3vw,2.4rem) 1.2rem; background: var(--paper); border-top: 1px solid var(--line); }
 
 body.noscroll { overflow: hidden; }
 
@@ -526,4 +527,7 @@ body.noscroll { overflow: hidden; }
   #pmodalBody { grid-template-columns: 1fr; overflow-y: auto; }
   .pmodal__media { max-height: 46vh; }
   .pmodal__img { max-height: 42vh; }
+  .pmodal__info { display: block; overflow: visible; max-height: none; }
+  .pmodal__media { max-height: 46vh; }
+  .pmodal__scroll { overflow: visible; }
 }
