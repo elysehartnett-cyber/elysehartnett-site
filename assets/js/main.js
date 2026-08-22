@@ -101,4 +101,14 @@
     note.style.cssText = "margin-top:1rem;font-family:var(--serif);font-style:italic;font-size:1.15rem;color:inherit;";
     form.replaceWith(note);
   }
+
+  /* ---- protect artwork: block right-click "Save image", dragging, and iOS long-press-save on images ----
+     Targets images only, so normal right-click on text/links still works. A light deterrent, not a lock;
+     the real protection is that images are served at web resolution, too small for a quality print. */
+  document.addEventListener("contextmenu", function (e) {
+    if (e.target && e.target.closest && e.target.closest("img")) e.preventDefault();
+  });
+  document.addEventListener("dragstart", function (e) {
+    if (e.target && e.target.closest && e.target.closest("img")) e.preventDefault();
+  });
 })();
